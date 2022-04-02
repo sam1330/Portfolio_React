@@ -1,3 +1,7 @@
 export const es = {
-  HELLO_WORLD: "Hola mundo"
+  ABOUT_ME: "Sobre mi",
+  CONTACT: "Contacto",
+  LANGUAGE: "Idioma",
+  PROJECTS: "Proyectos",
+  TECHNOLOGIES: "Tecnologías",
 };

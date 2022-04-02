@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Tests should render <Header /> 1`] = `
+<nav
+  className="header"
+>
+  <a
+    className="menu-item"
+    href="#about-me"
+  >
+    ABOUT_ME
+  </a>
+  <a
+    className="menu-item"
+    href="#"
+  >
+    TECHNOLOGIES
+  </a>
+  <a
+    className="menu-item"
+    href="#"
+  >
+    PROJECTS
+  </a>
+  <a
+    className="menu-item"
+    href="#"
+  >
+    CONTACT
+  </a>
+</nav>
+`;
