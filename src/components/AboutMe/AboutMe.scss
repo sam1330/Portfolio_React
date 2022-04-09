@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+:root {
+  --about-padding: 2rem;
+}
+
+.about__me__wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  align-items: center;
+  z-index: 2;
+}
+
+.bio__section {
+  width: 45vw;
+  height: 60vh;
+  // background-color: black;
+}
+
+.education__section {
+  // background-color: rgba(31, 31, 31, 0.532);
+  // color: #fff;
+  width: 45vw;
+  height: 60vh;
+}
+
+.title {
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.about__paragraph {
+  color: #fff;
+  line-height: 1.3rem;
+}
+
+.card {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(1, 89, 88, 0.83);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  margin: 0.5rem 0px 1rem 0px;
+  line-height: 1.5rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.card__header {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card__body {
+  font-weight: 200;
+}
+
+.badge {
+  font-size: 0.7rem;
+  border: #fff 1px solid;
+  border-radius: 10px;
+  margin-right: 0.7rem;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+  margin-bottom: 0.5rem;
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* Chrome */
+  word-wrap: break-word; /* IE */
+  display: inline-block;
+}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .about__me__wrapper {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .education__section, .bio__section {
+    width: 90vw;
+    margin-bottom: 3rem;
+  }
+}
