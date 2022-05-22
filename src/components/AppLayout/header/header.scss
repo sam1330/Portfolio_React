@@ -33,6 +33,10 @@ nav{
   display:inline-block;
 }
 
+nav > span {
+  cursor: pointer;
+}
+
 nav .menu-item:before{
   content:'';
   position: absolute;
@@ -83,7 +87,7 @@ nav .menu-item:hover:before{
 }
 
 @for $i from 1 through 5 {
-  nav a:nth-child(#{$i}){
+  nav span:nth-child(#{$i}){
     animation:show .2s #{$i*0.1+1}s ease 1 both;
   }
 }

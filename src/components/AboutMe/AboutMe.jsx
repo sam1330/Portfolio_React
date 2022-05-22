@@ -61,8 +61,8 @@ const AboutMe = () => {
               <span className="d-block">{study.career}</span>
               <p>
                 {
-                  study.learned.map(item => (
-                    <span className="badge">{ item }</span>
+                  study.learned.map((item, i) => (
+                    <span className="badge" key={i}>{ item }</span>
                   ))
                 }
               </p>

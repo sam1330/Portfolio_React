@@ -7,6 +7,9 @@ import i18next from "i18next";
 import { en } from './I18n/en/en';
 import { es } from './I18n/es/es';
 
+import AppLayout from "./components/AppLayout/AppLayout";
+
+
 import "./index.css"
 
 i18next.init({
@@ -25,7 +28,9 @@ i18next.init({
 ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
-      <App />
+      <AppLayout>
+        <App />
+      </AppLayout>
     </I18nextProvider>
   </React.StrictMode>,
   document.getElementById("root")

@@ -3,24 +3,26 @@ import { useTranslation } from "react-i18next";
 
 import "./header.scss";
 
-const Header = () => {
-
+const Header = ({ setTab }) => {
   const [t, i18n] = useTranslation();
 
   return (
     <nav className="header">
-      <a href="#about-me" className="menu-item">
+      <span onClick={() => setTab(() => "home")} className="menu-item">
+        {t("HOME")}
+      </span>
+      <span onClick={() => setTab(() => "aboutMe")} className="menu-item">
         {t("ABOUT_ME")}
-      </a>
-      <a href="#" className="menu-item">
+      </span>
+      <span onClick={() => setTab(() => "technologies")} className="menu-item">
         {t("TECHNOLOGIES")}
-      </a>
-      <a href="#" className="menu-item">
+      </span>
+      <span onClick={() => setTab(() => "projects")} className="menu-item">
         {t("PROJECTS")}
-      </a>
-      <a href="#" className="menu-item">
+      </span>
+      <span onClick={() => setTab(() => "contact")} className="menu-item">
         {t("CONTACT")}
-      </a>
+      </span>
     </nav>
   );
 };

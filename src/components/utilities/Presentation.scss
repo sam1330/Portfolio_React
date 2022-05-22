@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@1&display=swap');
+
+
+.presentation {
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+  height: fit-content;
+  position: absolute;
+  left: 2rem;
+  top: calc(50% - 5rem);
+  z-index: 99;
+  line-height: 3rem;
+}
+
+.presentation__name {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+}
+
+.presentation__intro {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .presentation__name {
+    font-size: 10vw;
+  }
+}
+@media screen and (max-width: 470px) {
+  .presentation__name {
+    font-size: 3.5rem;
+  }
+  .presentation__intro {
+    font-size: 1rem;
+  }
+}
